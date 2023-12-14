@@ -29,5 +29,30 @@ let booleanLoggedIn = Boolean(isLoggedIn)
 let someNumber = 1
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// *************** Operation **************
+let value = 3
+let negvalue = -value
+
+// console.log(negvalue);
+
+
+let str1 = "Hello"
+let str2 = " world"
+let str3 = str1 + str2
+// console.log(str3)
+
+
+
+// profix and postfix
+
+let x = 1
+let y = ++x
+
+let a = 1
+let b = a++
+
+console.log( `x = ${x} , y = ${y}  `)
+console.log( `x = ${a} , y = ${b}  `)
