@@ -59,5 +59,8 @@ console.log(user.userEmail)
 console.log(user2.userEmail)
 
 
+// stack make a copy of memory
+// stack used to store dynamic data
 
-
+//heap only make refference from single memory
+//whereas heap used to store dynamic dta
