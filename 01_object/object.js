@@ -24,7 +24,7 @@ const User = {
 
 
 User.email = "aman@email.com"
-// Object.freeze(User)                    // .freeze helps to fix the value in object and the then it not change after using it.
+// Object.freeze(User)   it.
 User.email = "aman@test.com"
 // console.log(User)
 
