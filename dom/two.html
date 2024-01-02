@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+
+    div.className = "myDiv"
+    div.id = Math.round(Math.random() * 10) 
+    div.setAttribute ('title' , "gen-title")
+    div.style.background = '#000'
+    div.style.color = '#fff'
+   div.innerHTML = "Hello World"
+    // const text =  document.createTextNode("Hello World")
+    // div.appendChild(text)
+
+    document.body.appendChild(div)
+</script>
+</html>
