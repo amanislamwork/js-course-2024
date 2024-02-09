@@ -18,18 +18,18 @@ function user(){
     const userName = "Aman"
     function city(){
         let cityName = "punjab"
-        // console.log(userName)
+        console.log(userName)
         function GetCityname(){
-            // console.log(cityName)
+            console.log(cityName)
         }
         GetCityname()
     }
     
-    city()
+   city()
 }
 
-
 user()
+
 /*Note for Above nested function:
 Parent function dont access child function variable but child function can access variable from parent functions
 */
@@ -38,9 +38,9 @@ if(true){
     const firstName = "Tony"
     if(true){
         const lastName = "Stark"
-        // console.log(`${firstName} ${lastName}`)
+       console.log(`${firstName} ${lastName}`)
     }
-  //  console.log(lastName)
+//    console.log(firstName)
     
 }
 
@@ -65,7 +65,7 @@ const expxsion =  function(num){
     return num + 2
 }
 
-console.log(expxsion(8))
+// console.log(expxsion(8))
 
 
 

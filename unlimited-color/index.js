@@ -2,7 +2,7 @@
 
 const randomColor = function(){
     const hex = "0123456789ABCDEF"
-
+     
     let color = '#'
 
     for(i = 0; i < 6; i++){
@@ -10,7 +10,9 @@ const randomColor = function(){
 
     }
     return color
+  
 }
+
 
 let intervalId;
 const startChangingColor = function(){

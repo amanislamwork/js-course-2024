@@ -28,7 +28,7 @@
 </script>
 <script>
 
-const saymyName = (str)=>{
+const saymyName = function(str){
     console.log('aman', Date.now() , str )
 }
 
@@ -38,7 +38,7 @@ const StopBtn = document.getElementById('stop')
 let startMyInt;
 
 const startInterval = function(){
-        startMyInt = setInterval(saymyName,1000,"")
+        startMyInt = setInterval(saymyName,1000,"h1")
 }
 
 const endInterval = function(){
@@ -46,10 +46,14 @@ const endInterval = function(){
 }
 
 
+
+
+
+
 startBtn.addEventListener('click' ,startInterval )
 
 
-StopBtn.addEventListener('click' ,endInterval)
+// StopBtn.addEventListener('click' ,endInterval)
 
 
 

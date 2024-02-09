@@ -18,18 +18,18 @@
 </body>
 <script>
 
-const changetext = function() {
-    document.querySelector('h1').innerHTML = "Namaste World"
-}
+  const changetext = function() {
+      document.querySelector('h1').innerHTML = "Namaste World"
+  }
 
-  const changME =    setTimeout(changetext,2000)
+    const changME =    setTimeout(changetext,2000)
 
-  const stopPls = document.querySelector('#button')
-  stopPls.addEventListener('click' , () => {
-    console.log("stop")
-    clearTimeout(changME)
-  })
-    // clearTimeout(changME)
+    const stopPls = document.querySelector('#button')
+    stopPls.addEventListener('click' , () => {
+    
+      clearTimeout(changME)
+    })
+      // clearTimeout(changME)
 
 </script>
 </html>
