@@ -28,7 +28,11 @@
 </script>
 <script>
 
+<<<<<<< HEAD
+const saymyName = (str)=>{
+=======
 const saymyName = function(str){
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
     console.log('aman', Date.now() , str )
 }
 
@@ -38,7 +42,11 @@ const StopBtn = document.getElementById('stop')
 let startMyInt;
 
 const startInterval = function(){
+<<<<<<< HEAD
+        startMyInt = setInterval(saymyName,1000,"")
+=======
         startMyInt = setInterval(saymyName,1000,"h1")
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
 }
 
 const endInterval = function(){
@@ -46,6 +54,12 @@ const endInterval = function(){
 }
 
 
+<<<<<<< HEAD
+startBtn.addEventListener('click' ,startInterval )
+
+
+StopBtn.addEventListener('click' ,endInterval)
+=======
 
 
 
@@ -54,6 +68,7 @@ startBtn.addEventListener('click' ,startInterval )
 
 
 // StopBtn.addEventListener('click' ,endInterval)
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
 
 
 

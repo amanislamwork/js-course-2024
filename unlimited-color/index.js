@@ -2,7 +2,11 @@
 
 const randomColor = function(){
     const hex = "0123456789ABCDEF"
+<<<<<<< HEAD
+
+=======
      
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
     let color = '#'
 
     for(i = 0; i < 6; i++){
@@ -10,10 +14,15 @@ const randomColor = function(){
 
     }
     return color
+<<<<<<< HEAD
+}
+
+=======
   
 }
 
 
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
 let intervalId;
 const startChangingColor = function(){
 

@@ -18,7 +18,24 @@
 </body>
 <script>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+const changetext = function() {
+    document.querySelector('h1').innerHTML = "Namaste World"
+}
+
+  const changME =    setTimeout(changetext,2000)
+
+  const stopPls = document.querySelector('#button')
+  stopPls.addEventListener('click' , () => {
+    console.log("stop")
+    clearTimeout(changME)
+  })
+    // clearTimeout(changME)
+=======
+>>>>>>> a4fb3143893d8d123969afba90b181d3bc10bdfd
   const changetext = function() {
       document.querySelector('h1').innerHTML = "Namaste World"
   }
@@ -31,6 +48,7 @@
       clearTimeout(changME)
     })
       // clearTimeout(changME)
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
 
 </script>
 </html>
