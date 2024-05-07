@@ -1,7 +1,7 @@
 // Promise One
 const newPromise = new Promise((resolve, reject) => {
   setTimeout(function () {
-    console.log("asyn task is completed");
+    // console.log("asyn task is completed");
     resolve();
   }, 1000);
 });
@@ -16,7 +16,7 @@ new Promise((resolve, reject) => {
     resolve();
   }, 1000);
 }).then(() => {
-  console.log("promise 2 consume");
+  // console.log("promise 2 consume");
 });
 
 // Promise Three
@@ -39,7 +39,7 @@ newPromiseTwo.then((value) => {
 
 const newPromiseThree = new Promise((resolve, reject) => {
   setTimeout(function () {
-    let error = true;
+    let error = false;
     if (!error) {
       resolve(url);
     } else {
@@ -73,7 +73,7 @@ let url2 = {
 
 const newPromiseFour = new Promise((resolve, reject) => {
     setTimeout(function () {
-        let error = false;
+        let error = true;
         if (!error) {
           resolve(url2);
         } else {
@@ -82,7 +82,11 @@ const newPromiseFour = new Promise((resolve, reject) => {
       }, 1000);
     })
 
-
+    newPromiseFour.then((data)=>{
+      console.log(data);
+    }).catch((error)=>{
+      console.log(error);
+    })
 
 async function consumePromiseFour(){
   try {
