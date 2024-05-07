@@ -21,26 +21,63 @@
     </div>
 </body>
 <script>
+<<<<<<< HEAD
     const req0Url = 'https://api.github.com/users/amanislamwork'
+=======
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
     let insertImg = document.getElementById('img')
     let cardTitle = document.getElementById('cardtitle')
     let cardDisc = document.getElementById('discription')
     let cta = document.getElementById('ctaUrl')
 
+<<<<<<< HEAD
     const xhr = new XMLHttpRequest()
     xhr.open('GET', reqUrl)
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
             const data = JSON.parse(this.responseText)
+=======
+        fetch('https://api.github.com/users/amanislamwork')
+        .then((response)=>{
+            return response.json();
+        })
+        .then((data)=>{
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
             console.log(data)
             insertImg.src = data.avatar_url
             cardTitle.innerHTML = data.name
             cardDisc.innerHTML = data.bio
             cta.href = data.html_url
+<<<<<<< HEAD
         }
     }
     xhr.send()
+=======
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+
+
+    const reqUrl = 'https://api.github.com/users/amanislamwork'
+    
+
+    // const xhr = new XMLHttpRequest()
+    // xhr.open('GET', reqUrl)
+    // xhr.onreadystatechange = function () {
+    //     console.log(xhr.readyState);
+    //     if (xhr.readyState === 4) {
+    //         const data = JSON.parse(this.responseText)
+    //         console.log(data)
+    //         insertImg.src = data.avatar_url
+    //         cardTitle.innerHTML = data.name
+    //         cardDisc.innerHTML = data.bio
+    //         cta.href = data.html_url
+    //     }
+    // }
+    // xhr.send()
+>>>>>>> ffb3087f9ba2a49371818b9e80b23c4fe867e6e8
 </script>
 
 </html>
